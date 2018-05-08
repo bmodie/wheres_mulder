@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Where's Mulder?</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+</head>
+
+<body>
+  <div class='topnav'>
+    <a class='active' href='index.html'>UFO Sightings</a>
+    <div class='alien'>
+      <a href='index.html'> <img src="alien_icon.png" alt=Github></a>
+    </div>
+  </div>
+
+  <div id="formContainer">
+      <div class='containerTitle'>
+        <h1>Search the Archives</h1>
+      </div>
+        <div class="col-md-3">
+          <div id="form-group1">
+            <input type="text" class="form-control" id="datetime" placeholder="Date/Time 'm/d/yyyy'">
+          </div>
+          <div id="form-group2">
+            <input type="text" class="form-control" id="city" placeholder="City, ex: 'Cleveland'">
+          </div>
+          <div id="form-group3">            
+            <input type="text" class="form-control" id="state" placeholder="State Abbr., ex: 'OH'">
+          </div>
+          <div id="form-group4">
+            <input type="text" class="form-control" id="country" placeholder="Country: either 'US' or 'CA'">
+          </div>
+
+            <a id="search" class="btn btn-default">Find</a>
+        </div>
+  </div>
+  <div class="tableContainer">
+      <div class="col-md-12">
+        <table id= "tableData" class="table table-striped">
+          <thead>
+            <tr>
+              <th>Date/Time</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Country</th>
+              <th>Shape</th>
+              <th>Duration Minutes</th>
+              <th>Comments</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+  </div>
+  <script src="data.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
